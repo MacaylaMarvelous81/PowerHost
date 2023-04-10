@@ -1,0 +1,21 @@
+name: todo
+
+on:
+  push:
+    branches: [ master ]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  todo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.0
+      - uses: DerJuulsn/todo-issue@v1.1.4
+        with:
+          keywords: TODO,FIXME,BUG
+          blobLinesBefore: 5
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
