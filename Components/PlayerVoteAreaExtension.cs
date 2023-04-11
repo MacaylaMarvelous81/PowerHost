@@ -28,12 +28,20 @@ namespace PowerHost.Components
 				}
 
 				// Kill the player without leaving a body via Exile RPC. (Exile locally first)
+				if (Constants.ShouldPlaySfx())
+				{
+					SoundManager.Instance.PlaySound(player.KillSfx, false, 0.8f, null);
+				}
+
 				player.Exiled();
 				MessageWriter messageWriter = AmongUsClient.Instance.StartRpcImmediately(player.NetId, 4, SendOption.Reliable);
 				AmongUsClient.Instance.FinishRpcImmediately(messageWriter);
-				
-				// BUG: This does not close the button menu.
+
+				// Close the menu for the controller maanager (outlines, controller selection things) and hide the
+				// actual buttons.
 				ControllerManager.Instance.CloseOverlayMenu(Base.name);
+				Base.ClearButtons();
+				
 				break;
 			}
 		}
