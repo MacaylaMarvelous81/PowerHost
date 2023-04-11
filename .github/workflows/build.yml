@@ -10,7 +10,7 @@ jobs:
         with:
           dotnet-version: 6.x
       - uses: cake-build/cake-action@v1.4.1
-      - uses: actions/checkout@v3.1.2
+      - uses: actions/upload-artifact@v3.1.2
         with:
           name: PowerHost.dll
           path: bin/Release/net6.0/PowerHost.dll
