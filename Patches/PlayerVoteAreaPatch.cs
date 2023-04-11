@@ -17,7 +17,7 @@ namespace PowerHost.Patches
 		{
 			PlayerVoteAreaExtension extension = __instance.gameObject.AddComponent<PlayerVoteAreaExtension>();
 
-			if (AmongUsClient.Instance.AmHost)
+			if (AmongUsClient.Instance.AmHost && __instance.TargetPlayerId != PlayerVoteArea.SkippedVote)
 			{
 				extension.CreateExecuteButton();
 			}
@@ -29,7 +29,7 @@ namespace PowerHost.Patches
 		[HarmonyPostfix]
 		public static void RevealExecuteButton(PlayerVoteArea __instance)
 		{
-			if (!AmongUsClient.Instance.AmHost)
+			if (!AmongUsClient.Instance.AmHost && __instance.TargetPlayerId != PlayerVoteArea.SkippedVote)
 			{
 				return;
 			}
