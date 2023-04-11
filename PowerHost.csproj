@@ -6,8 +6,8 @@
 
         <VersionPrefix>1.0.0</VersionPrefix>
         <VersionSuffix>dev</VersionSuffix>
-        <Description>Mod generated using Reactor Template</Description>
-        <!-- <Authors>your name</Authors> -->
+        <Description>Empowering Among Us hosts</Description>
+        <Authors>Jomar Milan</Authors>
     </PropertyGroup>
 
     <ItemGroup>
