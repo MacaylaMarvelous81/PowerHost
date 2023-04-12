@@ -18,7 +18,6 @@ namespace PowerHost
 		public override void Load()
 		{
 			_harmony.PatchAll(typeof(PlayerVoteAreaPatch));
-			_harmony.PatchAll(typeof(GameStartManagerPatch));
 			
 			Assets.LoadAssets();
 		}
