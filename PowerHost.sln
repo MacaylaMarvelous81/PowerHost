@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerHost", "PowerHost.csproj", "{DF08F5A1-586D-4FE5-920B-0FFFCE56A31E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerHost", "PowerHost\PowerHost.csproj", "{F219A34A-6543-4AD5-92C8-D27CABBC214C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DF08F5A1-586D-4FE5-920B-0FFFCE56A31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF08F5A1-586D-4FE5-920B-0FFFCE56A31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF08F5A1-586D-4FE5-920B-0FFFCE56A31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF08F5A1-586D-4FE5-920B-0FFFCE56A31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F219A34A-6543-4AD5-92C8-D27CABBC214C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F219A34A-6543-4AD5-92C8-D27CABBC214C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F219A34A-6543-4AD5-92C8-D27CABBC214C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F219A34A-6543-4AD5-92C8-D27CABBC214C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

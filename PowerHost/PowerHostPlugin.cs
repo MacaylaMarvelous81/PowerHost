@@ -13,11 +13,12 @@ namespace PowerHost
 	[BepInDependency(ReactorPlugin.Id)]
 	public partial class PowerHostPlugin : BasePlugin
 	{
-		public Harmony Harmony { get; } = new Harmony(Id);
+		private Harmony _harmony { get; } = new Harmony(Id);
 
 		public override void Load()
 		{
-			Harmony.PatchAll(typeof(PlayerVoteAreaPatch));
+			_harmony.PatchAll(typeof(PlayerVoteAreaPatch));
+			_harmony.PatchAll(typeof(GameStartManagerPatch));
 			
 			Assets.LoadAssets();
 		}
